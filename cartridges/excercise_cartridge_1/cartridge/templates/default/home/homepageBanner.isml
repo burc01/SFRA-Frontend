@@ -1,0 +1,12 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+
+<iscontentasset aid="homepage-banner">
+  <isif condition="${pdict.content != null && pdict.content.online}">
+    <div class="homepage-banner">
+      <img src="${pdict.content.custom.desktopBannerImage}" alt="${pdict.content.name}" title="${pdict.content.name}" />
+    </div>
+  <iselse>
+      <div class="error-message">error</div>
+  </iselse>
+  </isif>
+</iscontentasset>
