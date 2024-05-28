@@ -68,7 +68,10 @@
                 </div>
                 <!---totals, and checkout actions--->
                 <div class="col-sm-5 col-md-4 totals">
-                    <isinclude template="cart/cartPromoCode" />
+                    <a href="javascript:void(0);" id="show-coupon-code">Click here if you have a coupon code</a>
+                    <div id="coupon-code-section" style="display: none;">
+                        <isinclude template="cart/cartPromoCode" />
+                    </div>
                     <div class="coupons-and-promos">
                         <isinclude template="cart/cartCouponDisplay" />
                     </div>
@@ -92,5 +95,16 @@
     <div class="container">
         <isslot id="cart-recommendations-m" description="Recommended products" context="global" />
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var showCouponCodeLink = document.getElementById('show-coupon-code');
+            var couponCodeSection = document.getElementById('coupon-code-section');
+
+            showCouponCodeLink.addEventListener('click', function() {
+                couponCodeSection.style.display = 'block';
+                showCouponCodeLink.style.display = 'none';
+            });
+        });
+    </script>
     ${pdict.example}
 </isdecorate>
