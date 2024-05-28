@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns="http://www.demandware.com/xml/impex/user/2007-09-05">
+    <user login="burcbuluklu@sabanciuniv.edu" enabled-flag="true">
+        <credentials>
+            <external-id>88e0fa92-c38b-4104-b95b-578dd339caac</external-id>
+        </credentials>
+        <profile>
+            <first-name>Burc</first-name>
+            <last-name>Buluklu</last-name>
+            <email>burcbuluklu@sabanciuniv.edu</email>
+            <phone-mobile>+905071373236</phone-mobile>
+            <preferred-data-locale>none</preferred-data-locale>
+        </profile>
+    </user>
+
+</users>
