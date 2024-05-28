@@ -1,5 +1,5 @@
 'use strict';
- 
+
 var server = require('server');
  
 server.extend(module.superModule);
@@ -7,7 +7,7 @@ server.extend(module.superModule);
 server.append('Show', function (req, res, next) {
     var viewData = res.getViewData();
      
-    viewData.example = "One string"
+    viewData.example = ""
      
     res.setViewData(viewData);
  
